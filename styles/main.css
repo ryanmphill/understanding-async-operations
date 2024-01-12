@@ -1,0 +1,15 @@
+div {
+    margin: 0.5em 0;
+}
+
+.inFunction {
+    color: blue
+}
+
+.outsideFunction {
+    color: firebrick;
+}
+
+#secretMessage {
+    color: purple;
+}

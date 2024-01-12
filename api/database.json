@@ -1,0 +1,24 @@
+{
+    "messages": [
+        {
+            "id": 1,
+            "word": "THIS "
+        },
+        {
+            "id": 2,
+            "word": "IS "
+        },
+        {
+            "id": 3,
+            "word": "THE "
+        },
+        {
+            "id": 4,
+            "word": "ASYNCHRONOUS "
+        },
+        {
+            "id": 5,
+            "word": "OPERATION"
+        }
+    ]
+}
