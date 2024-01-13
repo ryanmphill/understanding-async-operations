@@ -1,14 +1,14 @@
 # Understanding Asynchronous Operations
 
-This is a quick simple application designed to help anyone (myself included) understand how a program operates when asynchronous operations are involved. The primary focus of this application is on demonstrating the concept of async/await, which is a part of JavaScript's modern syntax for handling promises.
+This is a quick and simple project designed to help deepen one's understanding of how a program operates when asynchronous operations are involved. The primary focus here is on demonstrating the concept of async/await and the handling of promises.
 
 ### Wait, What is an Asynchronous Operation, Anyway?
-In the context of JavaScript, asynchronous operations allow the program to perform non-blocking operations-- so it can continue executing other parts of the code without waiting for an operation to complete. This is especially useful when dealing with network requests or file system operations, where delays can occur. Ever been in a drive-thru where the cashier asked you to pull up ahead because your order wasn't ready? They ask that so that everyone else in the line won't have to wait longer just because you ordered the most complicated burrito on the menu. While your order was being prepared, they went ahead and put together the small taco and drink for the person behind you in line. This is essentially what an asynchronous operation allows a program to do. The line of cars can keep on flowing and won't get backed up.
+In the context of JavaScript, asynchronous operations allow the program to perform non-blocking operations-- so it can continue executing other parts of the code without waiting for an operation to complete. This is especially useful when dealing with network requests or file system operations, where delays can occur. Have you ever been in a drive-thru where the cashier asked you to pull up ahead because your order wasn't ready? They ask that so that everyone else in the line won't have to wait longer just because you ordered the most complicated burrito on the menu. While your order was being prepared, they went ahead and put together the small taco and drink for the person behind you in line. This is essentially what an asynchronous operation allows a program to do. The line of cars can keep on flowing and won't get backed up.
 
 Sometimes, however, we need to keep things more linear. Let's say you have a friend with you at the taco shop, but they don't want to decide what to order until they see how your meal turns out. They are going to **AWAIT** the arrival of your meal and then carry on with their difficult decision making from there.
 
 ## How it works
-In this application, we're using the fetch function to simulate a network request to a local API endpoint [http://localhost:8088/messages](http://localhost:8088/messages). This function returns a _Promise_ that resolves to the _Response_ object representing the response to the request.
+In this application, we're using the fetch function to simulate a network request to a local API endpoint [http://localhost:8088/messages](http://localhost:8088/messages). This function returns a _Promise_ that eventually resolves to the _Response_ object representing the response to the request.
 
 We define an asynchronous function called `fetchedMessage`. Inside this function, we use the _await_ keyword to pause the execution of the function until the Promise returned by fetch is resolved.
 
